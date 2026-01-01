@@ -1,34 +1,36 @@
 <html>
-	<head>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
-		<style>
-			html {
-			font: 400 16px/24px Roboto,sans-serif;
-			}
-			
-			.changelog {
+
+<head>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Google+Sans:400|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+	<style>
+		html {
+			font: 400 16px/24px Roboto, sans-serif;
+		}
+
+		.changelog {
 			background-color: #fff;
 			border-radius: 4px;
-			box-shadow: 0 1px 8px 0 rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12);
+			box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .12);
 			color: #757575;
-			padding: 80px 114px;
+			padding: 40px 50px;
 			position: relative;
 			z-index: 1;
-			}
-			
-			.changelog page-title {
+		}
+
+		.changelog page-title {
 			margin-top: 0;
-			}
-			
-			.changelog h1 {
+		}
+
+		.changelog h1 {
 			color: #424242;
 			font-size: 32px;
 			font-weight: 300;
 			line-height: 40px;
 			margin-bottom: 26px;
-			}
-			
-			.changelog h2 {
+		}
+
+		.changelog h2 {
 			border-color: #CFD8DC;
 			color: #424242;
 			font-size: 32px;
@@ -36,9 +38,9 @@
 			line-height: 40px;
 			margin-bottom: 26px;
 			padding-bottom: 15px;
-			}
-			
-			.badge {
+		}
+
+		.badge {
 			position: relative;
 			top: -3px;
 			border-radius: 16px;
@@ -51,75 +53,79 @@
 			font-size: 13px;
 			font-weight: 700;
 			text-align: center;
-			}
-			
-			.quote {
+		}
+
+		.quote {
 			color: #4285F4;
-			}
-			
-			.regress {
+		}
+
+		.regress {
 			color: #dd4b39;
-			}
-			
-			.badge-fixed {
+		}
+
+		.badge-fixed {
 			background-color: #dd4b39;
 			color: #fff;
-			}
-			
-			.badge-added {
+		}
+
+		.badge-added {
 			background-color: #0F9D58;
 			color: #fff;
-			}
-			
-			.badge-changed {
+		}
+
+		.badge-changed {
 			background-color: #F4B400;
 			color: #fff;
-			}
-			
-			h1, h2, h3 {
+		}
+
+		h1,
+		h2,
+		h3 {
 			overflow: hidden;
 			padding: 0;
 			text-overflow: ellipsis;
-			}
-			
-			h1 {
-			font: 400 32px/40px Google Sans,sans-serif;
+		}
+
+		h1 {
+			font: 400 32px/40px Google Sans, sans-serif;
 			letter-spacing: 0;
 			margin: 48px 0 24px;
-			}
-			
-			h2 {
+		}
+
+		h2 {
 			border-bottom: 0;
-			font: 400 22px/30px Google Sans,sans-serif;
+			font: 400 22px/30px Google Sans, sans-serif;
 			margin: 48px 0 24px;
 			padding-bottom: 0;
 			letter-spacing: -.01em;
-			}
-			
-			h2 .date {
+		}
+
+		h2 .date {
 			color: #4285F4;
-			}
-			
-			h3 {
-			font: 400 18px/30px Google Sans,sans-serif;
+		}
+
+		h3 {
+			font: 400 18px/30px Google Sans, sans-serif;
 			margin: 32px 0 16px;
-			}
-			
-			p {
+		}
+
+		p {
 			margin: 16px 0;
 			padding: 0;
-			}
-			
-			code, pre, .pre-style {
+		}
+
+		code,
+		pre,
+		.pre-style {
 			background: #f7f7f7;
 			color: #37474f;
-			font: 400 100%/1 Roboto Mono,monospace;
+			font: 400 100%/1 Roboto Mono, monospace;
 			padding: 1px 4px;
-			font: 500 90%/1 Roboto Mono,monospace;
+			font: 500 90%/1 Roboto Mono, monospace;
 			word-break: break-word;
-			}
-			
-			ul {
+		}
+
+		ul {
 			display: block;
 			list-style: disc outside;
 			-webkit-margin-before: 1em;
@@ -129,109 +135,56 @@
 			-webkit-padding-start: 40px;
 			margin: 0;
 			padding-left: 0;
-			}
-			
-			li {
+		}
+
+		li {
 			list-style-type: none;
 			margin: 8px 0 8px 22px;
 			padding: 0;
-			}
-			
-			:link, :visited {
+		}
+
+		:link,
+		:visited {
 			color: #039be5;
 			outline: 0;
 			text-decoration: none;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="changelog">
-			<h1 id="firebase_ios_release_notes" class="page-title">End of Day Report</h1>
-			<p>If you have any questions or if something isn't right, please dont hesitate to contact us.</p>
-			<h2 id="_version_4130_april_13_2018">
-				<a name="4.13.0">Version 4.13.0 -<span class="date">April 13, 2018<span/>
-				</h2>
-				<h3 id="authentication">Authentication</h3>
-				<ul>
-					<li>
-						<span class="badge badge-added">Confirmed</span>Resolved a crash which occurred when certain<span class="quote">Firebase IDTokens</span>were
-					being parsed.							</li>
-				</ul>
-				<h3 id="analytics">Analytics</h3>
-				<ul>
-					<li>
-						<span class="badge badge-added">added</span>Added a new public method<code>resetAnalyticsData</code>to clear all
-					Analytics data as well as reset App Instance ID.							</li>
-					<li>
-						<span class="badge badge-changed">changed</span>Improved In-App Purchase report: Analytics can report accurate
-					discounted price for introductory offer purchases.							</li>
-					<li>
-					<span class="badge badge-fixed">fixed</span>Other bug fixes.</li>
-				</ul>
-				<h2 id="_version_4120_april_10_2018">
-					<a name="4.12.0">Version 4.12.0 - April 10, 2018</a>
-				</h2>
-				<h3 id="authentication_1">Authentication</h3>
-				<ul>
-					<li>
-						<span class="badge badge-added">added</span>Adds<code>getIDTokenResultWithCompletion:</code>and
-						<code>getIDTokenResultForcingRefresh:completion:</code>APIs which call back with an
-						AuthTokenResult object. The Auth token result object contains the ID token JWT
-						string and other properties associated with the token including the decoded
-					available payload claims.							</li>
-					<li>
-						<span class="badge badge-added">added</span>Adds the<code>updateCurrentUser:completion:</code>API which sets the
-					currentUser on the calling Auth instance to the provided user object.							</li>
-					<li>
-						<span class="badge badge-added">added</span>Adds client-side validation to prevent setting<code>handleCodeInApp</code>
-						to false when performing email-link authentication. If								<code>handleCodeInApp</code>is
-					set to false an invalid argument exception is thrown.							</li>
-					<li>
-						<span class="badge badge-added">added</span>Adds support for passing the deep link (which is embedded in the
-						sign-in link sent via email) to the								<code>signInWithEmail:link:completion:</code>and
-					<code>isSignInWithEmailLink:</code>methods during an email/link sign-in flow.</li>
-				</ul>
-				<h3 id="fcm">FCM</h3>
-				<ul>
-					<li>
-						<span class="badge badge-added">added</span>Added new methods that provide completion handlers for topic
-					subscription and unsubscription.							</li>
-				</ul>
-				<h3 id="performance-monitoring">Performance Monitoring</h3>
-				<ul>
-					<li>
-					<span class="badge badge-fixed">fixed</span>Resolved a crash caused by a multithreading issue.</li>
-				</ul>
-				<h3 id="remote-config">Remote Config</h3>
-				<ul>
-					<li>
-					<span class="badge badge-changed">changed</span>Improved documentation on InstanceIDs for GDPR.</li>
-				</ul>
-				<h3 id="storage">Storage</h3>
-				<ul>
-					<li>
-						<span class="badge badge-changed">changed</span>Deprecated<code>downloadURLs</code>property on<code>StorageMetadata</code>. Use
-						<code>StorageReference.downloadURLWithCompletion()</code>to obtain a current
-					download URL.							</li>
-				</ul>
-				<h3 id="cloud-firestore">Cloud Firestore</h3>
-				<ul>
-					<li>
-						<span class="badge badge-fixed">fixed</span>Resolved a regression in the Firebase iOS SDK release 4.11.0 that
-						could cause								<code>getDocument()</code>requests made while offline to be delayed by up to
-					10 seconds rather than returning from cache immediately.							</li>
-					<li>
-						<span class="badge badge-added">added</span>Added a new Timestamp class to represent timestamp fields,
-						currently supporting up to microsecond precision. It can be passed to API
-						methods anywhere a system Date is currently accepted. To make
-						DocumentSnapshots read timestamp fields back as Timestamps instead of Dates,
-						you can set the newly added property								<code>areTimestampsInSnapshotsEnabled</code>in
-						FirestoreSettings to								<code>true</code>. Note that the current behavior
-						(DocumentSnapshots returning system Dates) will be removed in a future
-						release. Using Timestamps avoids rounding errors from the system Date being
-					stored as a floating-point value.							</li>
-				</ul>
-				</ul>
-			</div>
-		</body>
-	</html>	
+		}
+	</style>
+</head>
+
+<body>
+	<div class="changelog">
+		<h1 id="shoofReleaseNotes" class="page-title">SHOOF System Release Notes</h1>
+		<p>If you have any questions or if something isn't right, please don't hesitate to contact us.</p>
+		<h2 id="_version_26.01.010606 1-Jan-2026">
+			<a name="26.01.010606">Version 26.01.010606 -<span class="date">1 January 2026</span>
+		</h2>
+		<h3 id="newFeatures">New Features</h3>
+		<ul>
+			<li><span class="badge badge-added">Completed</span>Integrated Wala Points for <span class="quote">earn and	burn</span> loyalty transactions.</li>
+			<li><span class="badge badge-added">Completed</span>Introduced a Store Product Profile comparison against the Standard Brand Stock form, including a detailed report.</li>
+			<li><span class="badge badge-added">Completed</span>Added cash discount support to the insurance company calculation scheme.</li>
+			<li><span class="badge badge-added">Completed</span>Streamlined the creation and maintenance of insurance contracts.</li>
+			<li><span class="badge badge-added">Completed</span>Enabled search functionality within the Help Videos	screen.</li>
+			<li><span class="badge badge-added">Completed</span>Enhanced Purchase Order screen to allow applying a discount percentage instead of a fixed discount value.</li>
+			<li><span class="badge badge-added">Completed</span>Added the ability to open any screen directly using the	<a href="https://objectstorage.me-riyadh-1.oraclecloud.com/n/axll5ki9z2cz/b/SHOOF-STATIC/o/QuickVideos/Open%20Page.mp4" target="_blank">Open Page</a> feature.</li>
+			<li><span class="badge badge-added">Completed</span>Introduced a global <a href="https://objectstorage.me-riyadh-1.oraclecloud.com/n/axll5ki9z2cz/b/SHOOF-STATIC/o/QuickVideos/002-Application%20Search.mp4" target="_blank">Application Search</a> feature to quickly find any customer or product.</li>
+		</ul>
+
+		<h3 id="changes">Changes</h3>
+		<ul>
+			<li><span class="badge badge-added">Added</span>Separated <code>product code</code> from <code>product description</code> in the Stock Transfer Order screen to improve export accuracy and receiving workflows.</li>
+			<li><span class="badge badge-added">Added</span>Added file upload capability to the STO screen.</li>
+			<li><span class="badge badge-changed">Changed</span>Administrators can now show or hide the weather widget on the home screen.</li>
+			<li><span class="badge badge-fixed">Fixed</span>General bug fixes and performance enhancements.</li>
+		</ul>
+
+		<h3 id="pipeline">Pipeline</h3>
+		<ul>
+			<li><span class="badge badge-fixed">New</span>Upcoming integration with META WhatsApp.</li>
+			<li><span class="badge badge-fixed">New</span>New customer refund PDF report format under development.</li>
+		</ul>
+	</div>
+</body>
+
+</html>
